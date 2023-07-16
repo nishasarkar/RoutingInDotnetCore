@@ -1,0 +1,11 @@
+﻿@{
+
+    if (ViewContext.ActionDescriptor.RouteValues["area"] == "Admin")
+    {
+        Layout = "_AdminLayout";
+    }
+    else
+    {
+        Layout = "_Layout"; // Specify the default layout for non-admin areas
+    }
+}
